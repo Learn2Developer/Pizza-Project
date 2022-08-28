@@ -4,11 +4,12 @@
     <title>Jesse's Pizzatorium!</title>
     <link rel="stylesheet" type="text/css" href="style.css">
     <link href="https://fonts.googleapis.com/css?family=Rubik" rel="stylesheet">
+    <script type="text/javascript" src="https://livejs.com/live.js"></script>
 </head>
 
 <body>
     <section id="overlay">
-        <h1 id="welcome">Welcome to Learn2Developer's Pizzatorium!</h1>
+        <h1 id="welcome">Welcome Learn2Developer's Pizzatorium!</h1>
         <img src="./PngItem_3896696.png" width='200' height="280" alt="pizza slice" id="logo">
 
         <form action="submission.html" method="POST">
@@ -18,7 +19,7 @@
             <br>
 
             <section class="crust-type">
-                <label for="crust">Which kind of Crust?</label>
+                <label for="crust">Which kind of Crust would you like?</label>
 
                 <select name="crust" id="crust">
                     <option value="normal">Normal</option>
@@ -36,7 +37,7 @@
             <section class="sauce-type">
                 <span>What kind of sauce would you like as a base?</span>
 
-                <br>
+                <br><br>
 
                 <input type="radio" name="sauce" id="marinara" value="marinara">
                 <label for="marinara">Marinara</label>
@@ -57,7 +58,7 @@
 
                 <span>Which kinds of cheese would you like?</span>
 
-                <br>
+                <br><br>
 
                 <input type="checkbox" name="cheese" id="mozza" value="mozza" checked="true">
                 <label for="mozza">Mozza</label>
@@ -70,14 +71,85 @@
 
             </section>
 
+            <br>
+            <hr>
+            <br>
+
+            <section class="toppings">
+
+                <span>What toppings would you like?</span>
+
+                <br><br>
+
+                <input type="checkbox" name="topping" id="pepperoni" value="pepperoni">
+                <label for="pepperoni">Pepperoni</label>
+
+                <input type="checkbox" name="topping" id="ground-beef" value="ground-beef">
+                <label for="ground-beef">Ground Beef</label>
+
+                <input type="checkbox" name="topping" id="sausage" value="sausage">
+                <label for="sausage">Sausage</label>
+
+                <br>
+
+                <input type="checkbox" name="topping" id="mushrooms" value="mushrooms">
+                <label for="mushrooms">Mushrooms</label>
+
+                <input type="checkbox" name="topping" id="pineapple" value="pineapple">
+                <label for="pineapple">Pineapple</label>
+
+                <input type="checkbox" name="topping" id="green-peppers" value="green-peppers">
+                <label for="green-peppers">Green Peppers</label>
+
+                <br>
+
+                <input type="checkbox" name="topping" id="black-olives" value="black-olives">
+                <label for="black-olives">Black Olives</label>
+
+                <input type="checkbox" name="topping" id="tomatoes" value="tomatoes">
+                <label for="tomatoes">Tomatoes</label>
+
+                <input type="checkbox" name="topping" id="banana-peppers" value="banana-peppers">
+                <label for="banana-peppers">Banana Peppers</label>
 
 
+            </section>
+
+            <br>
+            <hr>
+            <br>
 
 
+            <section class="doneness">
+
+                <label for="doneness">How well cooked would you like your Pizza?</label>
+                <br><br>
+                <span>Melt the cheese!</span>
+                <input type="range" name="doneness" id="doneness" min="1" max="5" value="3">
+                <span>Burn it!</span>
 
 
+            </section>
 
+            <br>
+            <hr>
+            <br>
 
-    </section>
-    </form>
+            <section class="extra-info">
+
+                <span>Anything else we should know?</span>
+
+                <br><br>
+
+                <textarea id="extra" name="extra" rows="5" cols="60"
+                    placeholder="Delivery instructions, dietary restrictions, etc..."></textarea>
+
+            </section>
+
+            <br>
+
+            <section class="submit">
+                <input type="submit" value="Submit">
+            </section>
+        </form>
 </body>

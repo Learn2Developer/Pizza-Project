@@ -4,7 +4,8 @@
 }
 
 h1 {
-    font-size: xx-large
+    font-size: xx-large;
+    text-align: center;
 }
 
 body {
@@ -23,4 +24,9 @@ form {
 
 form hr {
     width: 10%;
+}
+
+#submitted {
+    text-align: center;
+    font-size: xx-large
 }
